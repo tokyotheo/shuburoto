@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  description: MyString
+  category1: MyString
+  category2: MyString
+  credit: 1
+  price: 1
+  instructor: MyString
+  purpose: MyString
+  plan: MyText
+  evaluation: MyString
+  textbook: MyText
+  remark: MyText
+
+two:
+  title: MyString
+  description: MyString
+  category1: MyString
+  category2: MyString
+  credit: 1
+  price: 1
+  instructor: MyString
+  purpose: MyString
+  plan: MyText
+  evaluation: MyString
+  textbook: MyText
+  remark: MyText

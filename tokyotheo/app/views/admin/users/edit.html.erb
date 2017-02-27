@@ -1,0 +1,35 @@
+<h1>Editing user</h1>
+
+<% form_for @user, :url => {:controller => 'admin/users', :action => 'update'}  do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label "New Password" %><br />
+    <%= f.password_field :password_new %>
+  </p>
+  <p>
+    <%= f.label "New Password(confirm)" %><br />
+    <%= f.password_field :password_new_confirmation %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :admin %><br />
+    <%= f.check_box :admin %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to '編集せずに戻る', admin_user_path(@user) %>

@@ -1,0 +1,38 @@
+<p>
+  <b>Title:</b>
+  <%=h @lesson.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @lesson.description %>
+</p>
+
+<p>
+  <b>Lecture:</b>
+  <%=h @lesson.lecture %>
+</p>
+
+<p>
+  <b>Lecture title:</b>
+  <%=h @lesson.lecture_title %>
+</p>
+
+<p>
+  <b>Instructor:</b>
+  <%=h @lesson.instructor %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @lesson.url %>
+</p>
+
+<p>
+  <b>Remark:</b>
+  <%=h @lesson.remark %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_lesson_path(@lesson) %> |
+<%= link_to 'Back', admin_lessons_path %>

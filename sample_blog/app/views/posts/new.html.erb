@@ -1,0 +1,10 @@
+<h1>Posts#new</h1>
+<p>Find me in app/views/posts/new.html.erb</p>
+<h1>新規投稿</h1>
+  <%= form_tag posts_path do %>
+  タイトル
+    <input type="text" name=" post[title]">
+  本文
+    <textarea name="post[body]"></textarea>
+    <input type="submit" value="投稿する">
+  <% end %>

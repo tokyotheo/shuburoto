@@ -1,0 +1,16 @@
+<% menu_items = [
+  { :link => { :controller => '/lectures', :action => 'index' },
+    :name => 'Lectures' },
+  ]
+  if @current_user
+    menu_items << { :link => { :controller => 'users',
+                               :action => 'show',
+			       :id => @current_user.id},
+                    :name => 'Profile' }
+  end -%>
+<div id='menu_bar'>
+<% menu_items.each_with_index do |item, index| -%>
+  <% if index > 0 %>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<% end -%>
+  <%= menu_link_to item -%>
+<% end -%>
+</div>

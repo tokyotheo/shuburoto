@@ -1,0 +1,33 @@
+<p>
+  <b>First name:</b>
+  <%=h @instructor.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%=h @instructor.last_name %>
+</p>
+
+<p>
+  <b>First name kana:</b>
+  <%=h @instructor.first_name_kana %>
+</p>
+
+<p>
+  <b>Last name kana:</b>
+  <%=h @instructor.last_name_kana %>
+</p>
+
+<p>
+  <b>Lecture:</b>
+  <%=h @instructor.lecture_id %>
+</p>
+
+<p>
+  <b>Report task:</b>
+  <%=h @instructor.report_task_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_instructor_path(@instructor) %> |
+<%= link_to 'Back', instructors_path %>

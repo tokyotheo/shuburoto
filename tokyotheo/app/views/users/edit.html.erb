@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "#www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="#www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<HEAD>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<META http-equiv="Content-Style-Type" content="text/css">
+	<link href="http://202.218.237.141/css/styles-site.css" type="text/css" rel="stylesheet" media="all" />
+	<script src="http://202.218.237.141/spry/includes/xpath.js" type="text/javascript"></script>
+	<script src="http://202.218.237.141/spry/includes/SpryData.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var dsLectures = new Spry.Data.XMLDataSet("http://202.218.237.141/rails/lectures.xml","lectures/lecture");
+	</script>
+	<TITLE>東京神学校インターネットコース</TITLE>
+
+</HEAD>
+<BODY>
+	<div id="description_wrap">
+		<div id="description">
+			<div id="description_left"><h1>東京神学校インターネットコース</h1></div>
+			<div id="description_right"><h1>インターネット神学校なら東京神学校</h1></div>
+			<div class="clear-both"><hr class="none" /></div>
+		</div>
+	</div>
+
+	<DIV id="wrapper2">
+		<DIV class="wrapper-1">
+			<DIV class="wrapper-2">
+				<DIV id="header">
+					<DIV id="header-1">
+						<DIV class="float-right"><%= render :partial => 'shared/account' %></DIV>
+
+					</DIV><!-- header-1終了 -->
+				</DIV><!-- header終了 -->
+
+				<DIV id="content">
+					<!--ナビゲーション開始-->
+					<div id="grobal_navi">
+						<h6><span>東京神学校（インターネット神学校）</span></h6>
+						<div id="menu">
+						<ul>
+							<li><A id="menutop" href="/">ＴｏｐＰａｇｅ</A></li>
+						</ul>
+						<!-- = render :partial => 'shared/menu_bar' -->
+						</div><!-- menu終了 -->
+
+						<div class="clear-both"><hr class="none" /></div>
+
+						<div id="sub_menu">
+							<ul>
+								<!--<li><a href="contact.php">サブメニュー</a></li>-->
+							</ul>
+						</div><!-- submenu終了 -->
+					</div><!-- grobal_navi終了 -->
+
+					<div id="left">
+		<!--ナビゲーション開始-->
+					  <DIV class="ct_navi">
+						<DIV class="ct_menu">
+								<% if @current_user -%>
+								<UL>
+									<LI><A href="/">インターネット科案内トップ</A>
+									<LI><A href="/main/domain/0">聖書神学</A>
+									<LI><A href="/main/domain/1">組織神学</A>
+									<LI><A href="/main/domain/2">歴史神学</A>
+									<LI><A href="/main/domain/3">実践神学</A>
+								</UL>
+								<% end -%>
+						</DIV><!-- ct_menu終了 -->
+						<%= render :partial => 'shared/side_bar' %>
+					  </DIV><!-- ct_navi終了 -->
+
+					</div><!-- left終了 -->
+					
+					<div id="mainwide"><!--メイン開始-->
+						<address></address>
+						<div class="mainwide_inner">
+
+							<div class="LineBox1_wrapper">
+								<div class="LineBox1_wrapper1">
+									<% if @current_user -%>
+									<h2><%=h @current_user.name %>さんの情報変更</h2>
+									<% form_for(@current_user) do |f| %>
+									  <%= f.error_messages %>
+									
+									  <p>
+									    <%= f.label :user_id %>:
+									    <%=h @current_user.user_id %>
+									  </p>
+									  <p>
+									    <%= f.label :name %>:
+									    <%=h @current_user.name %>
+									  </p>
+									  <p>
+									    <%= f.label :email %>:
+									    <%=h @current_user.email %>
+									  </p>
+									  <p>
+									    <%= f.label "新しいパスワード" %><br />
+									    <%= f.password_field :password_new %>
+									  </p>
+									  <p>
+									    <%= f.label "新しいパスワード(確認用)" %><br />
+									    <%= f.password_field :password_new_confirmation %>
+									  </p>
+									  <p>
+									    <%= f.submit "変更" %>
+									  </p>
+									<% end %>
+									
+									<%= link_to '戻る', users_path %>
+									</p>
+								<% else %>
+									<h2>マイページ</h2>
+									<p>ログインしてください</p>
+								<% end -%>
+								</p>
+									
+								<div class="clear-both"><hr class="none"></div>
+								</div><!--LineBox1_wrapper1-->
+							</div><!--LineBox1_wrapper-->
+
+
+						</div><!--main_inner-->
+					</div><!--メイン終了-->
+
+				</DIV><!-- content終了 -->
+				<div class="clear-both"><hr class="none" /></div>
+
+			</DIV><!-- wrapper-2終了-->
+		</DIV><!-- wrapper-1終了-->
+	</DIV><!-- wrapper終了 -->
+	<DIV id=footer>
+		<p>Copyright (C) 2009,2010 <em>東京神学校</em>. All Rights Reserved.</p>
+	</DIV><!-- footer終了 -->
+
+
+</BODY>
+
+</HTML>

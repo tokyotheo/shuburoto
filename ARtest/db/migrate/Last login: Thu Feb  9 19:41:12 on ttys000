@@ -1,0 +1,866 @@
+Last login: Thu Feb  9 19:41:12 on ttys000
+shuburoto:~ motoyamatetsuo$ vagrant
+Usage: vagrant [options] <command> [<args>]
+
+    -v, --version                    Print the version and exit.
+    -h, --help                       Print this help.
+
+Common commands:
+     box             manages boxes: installation, removal, etc.
+     connect         connect to a remotely shared Vagrant environment
+     destroy         stops and deletes all traces of the vagrant machine
+     global-status   outputs status Vagrant environments for this user
+     halt            stops the vagrant machine
+     help            shows the help for a subcommand
+     init            initializes a new Vagrant environment by creating a Vagrantfile
+     login           log in to HashiCorp's Atlas
+     package         packages a running vagrant environment into a box
+     plugin          manages plugins: install, uninstall, update, etc.
+     port            displays information about guest port mappings
+     powershell      connects to machine via powershell remoting
+     provision       provisions the vagrant machine
+     push            deploys code in this environment to a configured destination
+     rdp             connectsvagrant to machine via RDP
+     reload          restarts vagrant machine, loads new Vagrantfile configuration
+     resume          resume a suspended vagrant machine
+     share           share your Vagrant environment with anyone in the world
+     snapshot        manages snapshots: saving, restoring, etc.
+     ssh             connects to machine via SSH
+     ssh-config      outputs OpenSSH valid configuration to connect to the machine
+     status          outputs status of the vagrant machine
+     suspend         suspends the machine
+     up              starts and provisions the vagrant environment
+     vbguest         
+     version         prints current and latest Vagrant version
+
+For help on any individual command run `vagrant COMMAND -h`
+
+Additional subcommands are available, but are either more advanced
+or not commonly used. To see all subcommands, run the command
+`vagrant list-commands`.
+
+shuburoto:~ motoyamatetsuo$ vagrant up
+A Vagrant environment or target machine is required to run this
+command. Run `vagrant init` to create a new Vagrant environment. Or,
+get an ID of a target machine from `vagrant global-status` to run
+this command on. A final option is to change to a directory with a
+Vagrantfile and to try again.
+shuburoto:~ motoyamatetsuo$ 
+shuburoto:~ motoyamatetsuo$ cd desktop/work/vagrant
+shuburoto:vagrant motoyamatetsuo$ ls
+ARtest		Vagrantfile	lesson		testdir		tokyotheo
+shuburoto:vagrant motoyamatetsuo$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'ubuntu/trusty32' is up to date...
+==> default: A newer version of the box 'ubuntu/trusty32' is available! You currently
+==> default: have version '20170202.0.0'. The latest is version '20170202.1.0'. Run
+==> default: `vagrant box update` to update.
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+shuburoto:vagrant motoyamatetsuo$ ls
+ARtest		Vagrantfile	lesson		testdir		tokyotheo
+shuburoto:vagrant motoyamatetsuo$ vagrant
+Usage: vagrant [options] <command> [<args>]
+
+    -v, --version                    Print the version and exit.
+    -h, --help                       Print this help.
+
+Common commands:
+     box             manages boxes: installation, removal, etc.
+     connect         connect to a remotely shared Vagrant environment
+     destroy         stops and deletes all traces of the vagrant machine
+     global-status   outputs status Vagrant environments for this user
+     halt            stops the vagrant machine
+     help            shows the help for a subcommand
+     init            initializes a new Vagrant environment by creating a Vagrantfile
+     login           log in to HashiCorp's Atlas
+     package         packages a running vagrant environment into a box
+     plugin          manages plugins: install, uninstall, update, etc.
+     port            displays information about guest port mappings
+     powershell      connects to machine via powershell remoting
+     provision       provisions the vagrant machine
+     push            deploys code in this environment to a configured destination
+     rdp             connects to machine via RDP
+     reload          restarts vagrant machine, loads new Vagrantfile configuration
+     resume          resume a suspended vagrant machine
+     share           share your Vagrant environment with anyone in the world
+     snapshot        manages snapshots: saving, restoring, etc.
+     ssh             connects to machine via SSH
+     ssh-config      outputs OpenSSH valid configuration to connect to the machine
+     status          outputs status of the vagrant machine
+     suspend         suspends the machine
+     up              starts and provisions the vagrant environment
+     vbguest         
+     version         prints current and latest Vagrant version
+
+For help on any individual command run `vagrant COMMAND -h`
+
+Additional subcommands are available, but are either more advanced
+or not commonly used. To see all subcommands, run the command
+`vagrant list-commands`.
+
+shuburoto:vagrant motoyamatetsuo$ cd /vagrant
+-bash: cd: /vagrant: No such file or directory
+shuburoto:vagrant motoyamatetsuo$ rails new ARtest
+Rails is not currently installed on this system. To get the latest version, simply type:
+
+    $ sudo gem install rails
+
+You can then rerun your "rails" command.
+shuburoto:vagrant motoyamatetsuo$ ls
+ARtest		Vagrantfile	lesson		testdir		tokyotheo
+shuburoto:vagrant motoyamatetsuo$ cd lesson
+shuburoto:lesson motoyamatetsuo$ rails new ARtest
+Rails is not currently installed on this system. To get the latest version, simply type:
+
+    $ sudo gem install rails
+
+You can then rerun your "rails" command.
+shuburoto:lesson motoyamatetsuo$ vagrant
+Usage: vagrant [options] <command> [<args>]
+
+    -v, --version                    Print the version and exit.
+    -h, --help                       Print this help.
+
+Common commands:
+     box             manages boxes: installation, removal, etc.
+     connect         connect to a remotely shared Vagrant environment
+     destroy         stops and deletes all traces of the vagrant machine
+     global-status   outputs status Vagrant environments for this user
+     halt            stops the vagrant machine
+     help            shows the help for a subcommand
+     init            initializes a new Vagrant environment by creating a Vagrantfile
+     login           log in to HashiCorp's Atlas
+     package         packages a running vagrant environment into a box
+     plugin          manages plugins: install, uninstall, update, etc.
+     port            displays information about guest port mappings
+     powershell      connects to machine via powershell remoting
+     provision       provisions the vagrant machine
+     push            deploys code in this environment to a configured destination
+     rdp             connects to machine via RDP
+     reload          restarts vagrant machine, loads new Vagrantfile configuration
+     resume          resume a suspended vagrant machine
+     share           share your Vagrant environment with anyone in the world
+     snapshot        manages snapshots: saving, restoring, etc.
+     ssh             connects to machine via SSH
+     ssh-config      outputs OpenSSH valid configuration to connect to the machine
+     status          outputs status of the vagrant machine
+     suspend         suspends the machine
+     up              starts and provisions the vagrant environment
+     vbguest         
+     version         prints current and latest Vagrant version
+
+For help on any individual command run `vagrant COMMAND -h`
+
+Additional subcommands are available, but are either more advanced
+or not commonly used. To see all subcommands, run the command
+`vagrant list-commands`.
+
+shuburoto:lesson motoyamatetsuo$ rails new ARtest
+Rails is not currently installed on this system. To get the latest version, simply type:
+
+    $ sudo gem install rails
+
+You can then rerun your "rails" command.
+shuburoto:lesson motoyamatetsuo$ cd ..
+shuburoto:vagrant motoyamatetsuo$ vagrant
+Usage: vagrant [options] <command> [<args>]
+
+    -v, --version                    Print the version and exit.
+    -h, --help                       Print this help.
+
+Common commands:
+     box             manages boxes: installation, removal, etc.
+     connect         connect to a remotely shared Vagrant environment
+     destroy         stops and deletes all traces of the vagrant machine
+     global-status   outputs status Vagrant environments for this user
+     halt            stops the vagrant machine
+     help            shows the help for a subcommand
+     init            initializes a new Vagrant environment by creating a Vagrantfile
+     login           log in to HashiCorp's Atlas
+     package         packages a running vagrant environment into a box
+     plugin          manages plugins: install, uninstall, update, etc.
+     port            displays information about guest port mappings
+     powershell      connects to machine via powershell remoting
+     provision       provisions the vagrant machine
+     push            deploys code in this environment to a configured destination
+     rdp             connects to machine via RDP
+     reload          restarts vagrant machine, loads new Vagrantfile configuration
+     resume          resume a suspended vagrant machine
+     share           share your Vagrant environment with anyone in the world
+     snapshot        manages snapshots: saving, restoring, etc.
+     ssh             connects to machine via SSH
+     ssh-config      outputs OpenSSH valid configuration to connect to the machine
+     status          outputs status of the vagrant machine
+     suspend         suspends the machine
+     up              starts and provisions the vagrant environment
+     vbguest         
+     version         prints current and latest Vagrant version
+
+For help on any individual command run `vagrant COMMAND -h`
+
+Additional subcommands are available, but are either more advanced
+or not commonly used. To see all subcommands, run the command
+`vagrant list-commands`.
+
+shuburoto:vagrant motoyamatetsuo$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'ubuntu/trusty32' is up to date...
+==> default: A newer version of the box 'ubuntu/trusty32' is available! You currently
+==> default: have version '20170202.0.0'. The latest is version '20170202.1.0'. Run
+==> default: `vagrant box update` to update.
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+shuburoto:vagrant motoyamatetsuo$ rails new ARtest
+Rails is not currently installed on this system. To get the latest version, simply type:
+
+    $ sudo gem install rails
+
+You can then rerun your "rails" command.
+shuburoto:vagrant motoyamatetsuo$ cd /vagrant
+-bash: cd: /vagrant: No such file or directory
+shuburoto:vagrant motoyamatetsuo$ rails new ARtest
+Rails is not currently installed on this system. To get the latest version, simply type:
+
+    $ sudo gem install rails
+
+You can then rerun your "rails" command.
+shuburoto:vagrant motoyamatetsuo$ vagrant
+Usage: vagrant [options] <command> [<args>]
+
+    -v, --version                    Print the version and exit.
+    -h, --help                       Print this help.
+
+Common commands:
+     box             manages boxes: installation, removal, etc.
+     connect         connect to a remotely shared Vagrant environment
+     destroy         stops and deletes all traces of the vagrant machine
+     global-status   outputs status Vagrant environments for this user
+     halt            stops the vagrant machine
+     help            shows the help for a subcommand
+     init            initializes a new Vagrant environment by creating a Vagrantfile
+     login           log in to HashiCorp's Atlas
+     package         packages a running vagrant environment into a box
+     plugin          manages plugins: install, uninstall, update, etc.
+     port            displays information about guest port mappings
+     powershell      connects to machine via powershell remoting
+     provision       provisions the vagrant machine
+     push            deploys code in this environment to a configured destination
+     rdp             connects to machine via RDP
+     reload          restarts vagrant machine, loads new Vagrantfile configuration
+     resume          resume a suspended vagrant machine
+     share           share your Vagrant environment with anyone in the world
+     snapshot        manages snapshots: saving, restoring, etc.
+     ssh             connects to machine via SSH
+     ssh-config      outputs OpenSSH valid configuration to connect to the machine
+     status          outputs status of the vagrant machine
+     suspend         suspends the machine
+     up              starts and provisions the vagrant environment
+     vbguest         
+     version         prints current and latest Vagrant version
+
+For help on any individual command run `vagrant COMMAND -h`
+
+Additional subcommands are available, but are either more advanced
+or not commonly used. To see all subcommands, run the command
+`vagrant list-commands`.
+
+shuburoto:vagrant motoyamatetsuo$ cd /vagrant
+-bash: cd: /vagrant: No such file or directory
+shuburoto:vagrant motoyamatetsuo$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'ubuntu/trusty32' is up to date...
+==> default: A newer version of the box 'ubuntu/trusty32' is available! You currently
+==> default: have version '20170202.0.0'. The latest is version '20170202.1.0'. Run
+==> default: `vagrant box update` to update.
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+shuburoto:vagrant motoyamatetsuo$ cd /vagrant
+-bash: cd: /vagrant: No such file or directory
+shuburoto:vagrant motoyamatetsuo$ rails new ARtest
+Rails is not currently installed on this system. To get the latest version, simply type:
+
+    $ sudo gem install rails
+
+You can then rerun your "rails" command.
+shuburoto:vagrant motoyamatetsuo$ 
+shuburoto:vagrant motoyamatetsuo$ 
+shuburoto:vagrant motoyamatetsuo$ vagrant ssh
+Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 3.13.0-108-generic i686)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Thu Feb  9 10:48:50 UTC 2017
+
+  System load:  0.74              Processes:           78
+  Usage of /:   4.0% of 39.34GB   Users logged in:     0
+  Memory usage: 7%                IP address for eth0: 10.0.2.15
+  Swap usage:   0%                IP address for eth1: 192.168.33.10
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+New release '16.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Thu Feb  9 09:22:07 2017 from 10.0.2.2
+vagrant@vagrant-ubuntu-trusty-32:~$ rails new ARtest
+      create  
+      create  README.md
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/config/manifest.js
+      create  app/assets/javascripts/application.js
+      create  app/assets/javascripts/cable.js
+      create  app/assets/stylesheets/application.css
+      create  app/channels/application_cable/channel.rb
+      create  app/channels/application_cable/connection.rb
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/jobs/application_job.rb
+      create  app/mailers/application_mailer.rb
+      create  app/models/application_record.rb
+      create  app/views/layouts/application.html.erb
+      create  app/views/layouts/mailer.html.erb
+      create  app/views/layouts/mailer.text.erb
+      create  app/assets/images/.keep
+      create  app/assets/javascripts/channels
+      create  app/assets/javascripts/channels/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  bin/update
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/cable.yml
+      create  config/puma.rb
+      create  config/spring.rb
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/application_controller_renderer.rb
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/cors.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/new_framework_defaults.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/apple-touch-icon-precomposed.png
+      create  public/apple-touch-icon.png
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/fixtures/files
+      create  test/fixtures/files/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp
+      create  tmp/.keep
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+      remove  config/initializers/cors.rb
+         run  bundle install
+The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform mingw, mswin, x64_mingw, jruby`.
+Fetching gem metadata from https://rubygems.org/..........
+Fetching version metadata from https://rubygems.org/..
+Fetching dependency metadata from https://rubygems.org/.
+Resolving dependencies...
+Using rake 12.0.0
+Using concurrent-ruby 1.0.4
+Using i18n 0.8.0
+Using minitest 5.10.1
+Using thread_safe 0.3.5
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using rack 2.0.1
+Using nio4r 1.2.1
+Using websocket-extensions 0.1.2
+Using mime-types-data 3.2016.0521
+Using arel 7.1.4
+Using bundler 1.14.3
+Using byebug 9.0.6
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using method_source 0.8.2
+Using thor 0.19.4
+Using debug_inspector 0.0.2
+Using ffi 1.9.17
+Using multi_json 1.12.1
+Using rb-fsevent 0.9.8
+Using puma 3.7.0
+Using sass 3.4.23
+Using tilt 2.0.6
+Using sqlite3 1.3.13
+Using turbolinks-source 5.0.0
+Using tzinfo 1.2.2
+Using nokogiri 1.7.0.1
+Using rack-test 0.6.3
+Using sprockets 3.7.1
+Using websocket-driver 0.6.5
+Using mime-types 3.1
+Using coffee-script 2.4.1
+Using uglifier 3.0.4
+Using rb-inotify 0.9.8
+Using turbolinks 5.0.1
+Using activesupport 5.0.1
+Using loofah 2.0.3
+Using mail 2.6.4
+Using listen 3.0.8
+Using rails-dom-testing 2.0.2
+Using globalid 0.3.7
+Using activemodel 5.0.1
+Using jbuilder 2.6.1
+Using spring 2.0.1
+Using rails-html-sanitizer 1.0.3
+Using activejob 5.0.1
+Using activerecord 5.0.1
+Using spring-watcher-listen 2.0.1
+Using actionview 5.0.1
+Using actionpack 5.0.1
+Using actioncable 5.0.1
+Using actionmailer 5.0.1
+Using railties 5.0.1
+Using sprockets-rails 3.2.0
+Using coffee-rails 4.2.1
+Using jquery-rails 4.2.2
+Using web-console 3.4.0
+Using rails 5.0.1
+Using sass-rails 5.0.6
+Bundle complete! 15 Gemfile dependencies, 62 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+vagrant@vagrant-ubuntu-trusty-32:~$ ls
+ARtest
+vagrant@vagrant-ubuntu-trusty-32:~$ cd vagrant
+-bash: cd: vagrant: No such file or directory
+vagrant@vagrant-ubuntu-trusty-32:~$ cd /vagrant
+vagrant@vagrant-ubuntu-trusty-32:/vagrant$ rails new ARtest
+       exist  
+   identical  README.md
+   identical  Rakefile
+   identical  config.ru
+   identical  .gitignore
+   identical  Gemfile
+       exist  app
+   identical  app/assets/config/manifest.js
+   identical  app/assets/javascripts/application.js
+   identical  app/assets/javascripts/cable.js
+   identical  app/assets/stylesheets/application.css
+   identical  app/channels/application_cable/channel.rb
+   identical  app/channels/application_cable/connection.rb
+   identical  app/controllers/application_controller.rb
+   identical  app/helpers/application_helper.rb
+   identical  app/jobs/application_job.rb
+   identical  app/mailers/application_mailer.rb
+   identical  app/models/application_record.rb
+   identical  app/views/layouts/application.html.erb
+   identical  app/views/layouts/mailer.html.erb
+   identical  app/views/layouts/mailer.text.erb
+   identical  app/assets/images/.keep
+       exist  app/assets/javascripts/channels
+   identical  app/assets/javascripts/channels/.keep
+   identical  app/controllers/concerns/.keep
+   identical  app/models/concerns/.keep
+       exist  bin
+   identical  bin/bundle
+    conflict  bin/rails
+Overwrite /vagrant/ARtest/bin/rails? (enter "h" for help) [Ynaqdh] "h"
+        Y - yes, overwrite
+        n - no, do not overwrite
+        a - all, overwrite this and all others
+        q - quit, abort
+        d - diff, show the differences between the old and the new
+        h - help, show this help
+Overwrite /vagrant/ARtest/bin/rails? (enter "h" for help) [Ynaqdh] 
+       force  bin/rails
+    conflict  bin/rake
+Overwrite /vagrant/ARtest/bin/rake? (enter "h" for help) [Ynaqdh] 
+       force  bin/rake
+   identical  bin/setup
+   identical  bin/update
+       exist  config
+   identical  config/routes.rb
+   identical  config/application.rb
+   identical  config/environment.rb
+    conflict  config/secrets.yml
+Overwrite /vagrant/ARtest/config/secrets.yml? (enter "h" for help) [Ynaqdh] 
+       force  config/secrets.yml
+   identical  config/cable.yml
+   identical  config/puma.rb
+   identical  config/spring.rb
+       exist  config/environments
+   identical  config/environments/development.rb
+   identical  config/environments/production.rb
+   identical  config/environments/test.rb
+       exist  config/initializers
+   identical  config/initializers/application_controller_renderer.rb
+   identical  config/initializers/assets.rb
+   identical  config/initializers/backtrace_silencers.rb
+   identical  config/initializers/cookies_serializer.rb
+      create  config/initializers/cors.rb
+   identical  config/initializers/filter_parameter_logging.rb
+   identical  config/initializers/inflections.rb
+   identical  config/initializers/mime_types.rb
+   identical  config/initializers/new_framework_defaults.rb
+   identical  config/initializers/session_store.rb
+   identical  config/initializers/wrap_parameters.rb
+       exist  config/locales
+   identical  config/locales/en.yml
+   identical  config/boot.rb
+   identical  config/database.yml
+       exist  db
+   identical  db/seeds.rb
+       exist  lib
+       exist  lib/tasks
+   identical  lib/tasks/.keep
+       exist  lib/assets
+   identical  lib/assets/.keep
+       exist  log
+   identical  log/.keep
+       exist  public
+   identical  public/404.html
+   identical  public/422.html
+   identical  public/500.html
+   identical  public/apple-touch-icon-precomposed.png
+   identical  public/apple-touch-icon.png
+   identical  public/favicon.ico
+   identical  public/robots.txt
+       exist  test/fixtures
+   identical  test/fixtures/.keep
+       exist  test/fixtures/files
+   identical  test/fixtures/files/.keep
+       exist  test/controllers
+   identical  test/controllers/.keep
+       exist  test/mailers
+   identical  test/mailers/.keep
+       exist  test/models
+   identical  test/models/.keep
+       exist  test/helpers
+   identical  test/helpers/.keep
+       exist  test/integration
+   identical  test/integration/.keep
+   identical  test/test_helper.rb
+       exist  tmp
+   identical  tmp/.keep
+       exist  tmp/cache
+       exist  tmp/cache/assets
+       exist  vendor/assets/javascripts
+   identical  vendor/assets/javascripts/.keep
+       exist  vendor/assets/stylesheets
+   identical  vendor/assets/stylesheets/.keep
+      remove  config/initializers/cors.rb
+         run  bundle install
+Using rake 12.0.0
+Using concurrent-ruby 1.0.4
+Using i18n 0.8.0
+Using minitest 5.10.1
+Using thread_safe 0.3.5
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using rack 2.0.1
+Using nio4r 1.2.1
+Using websocket-extensions 0.1.2
+Using mime-types-data 3.2016.0521
+Using arel 7.1.4
+Using byebug 9.0.6
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using method_source 0.8.2
+Using thor 0.19.4
+Using debug_inspector 0.0.2
+Using ffi 1.9.17
+Using multi_json 1.12.1
+Using rb-fsevent 0.9.8
+Using puma 3.7.0
+Using bundler 1.14.3
+Using sass 3.4.23
+Using tilt 2.0.6
+Using sqlite3 1.3.13
+Using turbolinks-source 5.0.0
+Using tzinfo 1.2.2
+Using nokogiri 1.7.0.1
+Using rack-test 0.6.3
+Using sprockets 3.7.1
+Using websocket-driver 0.6.5
+Using mime-types 3.1
+Using coffee-script 2.4.1
+Using uglifier 3.0.4
+Using rb-inotify 0.9.8
+Using turbolinks 5.0.1
+Using activesupport 5.0.1
+Using loofah 2.0.3
+Using mail 2.6.4
+Using listen 3.0.8
+Using rails-dom-testing 2.0.2
+Using globalid 0.3.7
+Using activemodel 5.0.1
+Using jbuilder 2.6.1
+Using spring 2.0.1
+Using rails-html-sanitizer 1.0.3
+Using activejob 5.0.1
+Using activerecord 5.0.1
+Using spring-watcher-listen 2.0.1
+Using actionview 5.0.1
+Using actionpack 5.0.1
+Using actioncable 5.0.1
+Using actionmailer 5.0.1
+Using railties 5.0.1
+Using sprockets-rails 3.2.0
+Using coffee-rails 4.2.1
+Using jquery-rails 4.2.2
+Using web-console 3.4.0
+Using rails 5.0.1
+Using sass-rails 5.0.6
+Bundle complete! 15 Gemfile dependencies, 62 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+vagrant@vagrant-ubuntu-trusty-32:/vagrant$ 
+vagrant@vagrant-ubuntu-trusty-32:/vagrant$ cd ARtest
+vagrant@vagrant-ubuntu-trusty-32:/vagrant/ARtest$ rails generate model
+Running via Spring preloader in process 1910
+Expected string default value for '--jbuilder'; got true (boolean)
+Usage:
+  rails generate model NAME [field[:type][:index] field[:type][:index]] [options]
+
+Options:
+      [--skip-namespace], [--no-skip-namespace]  # Skip namespace (affects only isolated applications)
+      [--force-plural], [--no-force-plural]      # Forces the use of the given model name
+  -o, --orm=NAME                                 # ORM to be invoked
+                                                 # Default: active_record
+
+ActiveRecord options:
+      [--migration], [--no-migration]        # Indicates when to generate migration
+                                             # Default: true
+      [--timestamps], [--no-timestamps]      # Indicates when to generate timestamps
+                                             # Default: true
+      [--parent=PARENT]                      # The parent class for the generated model
+      [--indexes], [--no-indexes]            # Add indexes for references and belongs_to columns
+                                             # Default: true
+      [--primary-key-type=PRIMARY_KEY_TYPE]  # The type for primary key
+  -t, [--test-framework=NAME]                # Test framework to be invoked
+                                             # Default: test_unit
+
+TestUnit options:
+      [--fixture], [--no-fixture]   # Indicates when to generate fixture
+                                    # Default: true
+  -r, [--fixture-replacement=NAME]  # Fixture replacement to be invoked
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+    Stubs out a new model. Pass the model name, either CamelCased or
+    under_scored, and an optional list of attribute pairs as arguments.
+
+    Attribute pairs are field:type arguments specifying the
+    model's attributes. Timestamps are added by default, so you don't have to
+    specify them by hand as 'created_at:datetime updated_at:datetime'.
+
+    As a special case, specifying 'password:digest' will generate a
+    password_digest field of string type, and configure your generated model and
+    tests for use with Active Model has_secure_password (assuming the default ORM
+    and test framework are being used).
+
+    You don't have to think up every attribute up front, but it helps to
+    sketch out a few so you can start working with the model immediately.
+
+    This generator invokes your configured ORM and test framework, which
+    defaults to Active Record and TestUnit.
+
+    Finally, if --parent option is given, it's used as superclass of the
+    created model. This allows you create Single Table Inheritance models.
+
+    If you pass a namespaced model name (e.g. admin/account or Admin::Account)
+    then the generator will create a module with a table_name_prefix method
+    to prefix the model's table name with the module name (e.g. admin_accounts)
+
+Available field types:
+
+    Just after the field name you can specify a type like text or boolean.
+    It will generate the column with the associated SQL type. For instance:
+
+        `rails generate model post title:string body:text`
+
+    will generate a title column with a varchar type and a body column with a text
+    type. If no type is specified the string type will be used by default.
+    You can use the following types:
+
+        integer
+        primary_key
+        decimal
+        float
+        boolean
+        binary
+        string
+        text
+        date
+        time
+        datetime
+
+    You can also consider `references` as a kind of type. For instance, if you run:
+
+        `rails generate model photo title:string album:references`
+
+    It will generate an `album_id` column. You should generate these kinds of fields when
+    you will use a `belongs_to` association, for instance. `references` also supports
+    polymorphism, you can enable polymorphism like this:
+
+        `rails generate model product supplier:references{polymorphic}`
+
+    For integer, string, text and binary fields, an integer in curly braces will
+    be set as the limit:
+
+        `rails generate model user pseudo:string{30}`
+
+    For decimal, two integers separated by a comma in curly braces will be used
+    for precision and scale:
+
+        `rails generate model product 'price:decimal{10,2}'`
+
+    You can add a `:uniq` or `:index` suffix for unique or standard indexes
+    respectively:
+
+        `rails generate model user pseudo:string:uniq`
+        `rails generate model user pseudo:string:index`
+
+    You can combine any single curly brace option with the index options:
+
+        `rails generate model user username:string{30}:uniq`
+        `rails generate model product supplier:references{polymorphic}:index`
+
+    If you require a `password_digest` string column for use with
+    has_secure_password, you can specify `password:digest`:
+
+        `rails generate model user password:digest`
+
+    If you require a `token` string column for use with
+    has_secure_token, you can specify `auth_token:token`:
+
+        `rails generate model user auth_token:token`
+
+Examples:
+    `rails generate model account`
+
+        For Active Record and TestUnit it creates:
+
+            Model:      app/models/account.rb
+            Test:       test/models/account_test.rb
+            Fixtures:   test/fixtures/accounts.yml
+            Migration:  db/migrate/XXX_create_accounts.rb
+
+    `rails generate model post title:string body:text published:boolean`
+
+        Creates a Post model with a string title, text body, and published flag.
+
+    `rails generate model admin/account`
+
+        For Active Record and TestUnit it creates:
+
+            Module:     app/models/admin.rb
+            Model:      app/models/admin/account.rb
+            Test:       test/models/admin/account_test.rb
+            Fixtures:   test/fixtures/admin/accounts.yml
+            Migration:  db/migrate/XXX_create_admin_accounts.rb
+
+vagrant@vagrant-ubuntu-trusty-32:/vagrant/ARtest$ rails g model Article title:string body:string author:string
+Running via Spring preloader in process 1918
+Expected string default value for '--jbuilder'; got true (boolean)
+      invoke  active_record
+   identical    db/migrate/20170207105100_create_articles.rb
+   identical    app/models/article.rb
+      invoke    test_unit
+   identical      test/models/article_test.rb
+   identical      test/fixtures/articles.yml
+vagrant@vagrant-ubuntu-trusty-32:/vagrant/ARtest$ rake db:migrate
+vagrant@vagrant-ubuntu-trusty-32:/vagrant/ARtest$ rails g model Article title:string body:string author:string
+Running via Spring preloader in process 1934
+Expected string default value for '--jbuilder'; got true (boolean)
+      invoke  active_record
+   identical    db/migrate/20170207105100_create_articles.rb
+   identical    app/models/article.rb
+      invoke    test_unit
+   identical      test/models/article_test.rb
+   identical      test/fixtures/articles.yml
+vagrant@vagrant-ubuntu-trusty-32:/vagrant/ARtest$ rails g model Article title:string body:string author:string
+Running via Spring preloader in process 1942
+Expected string default value for '--jbuilder'; got true (boolean)
+      invoke  active_record
+   identical    db/migrate/20170207105100_create_articles.rb
+   identical    app/models/article.rb
+      invoke    test_unit
+   identical      test/models/article_test.rb
+   identical      test/fixtures/articles.yml
+vagrant@vagrant-ubuntu-trusty-32:/vagrant/ARtest$ cd../
+-bash: cd../: No such file or directory
+vagrant@vagrant-ubuntu-trusty-32:/vagrant/ARtest$ cd ../
+vagrant@vagrant-ubuntu-trusty-32:/vagrant$ cd ARtest
+vagrant@vagrant-ubuntu-trusty-32:/vagrant/ARtest$ rails g model Article title:string body:string author:string
+Running via Spring preloader in process 1951
+Expected string default value for '--jbuilder'; got true (boolean)
+      invoke  active_record
+   identical    db/migrate/20170207105100_create_articles.rb
+   identical    app/models/article.rb
+      invoke    test_unit
+   identical      test/models/article_test.rb
+   identical      test/fixtures/articles.yml
+vagrant@vagrant-ubuntu-trusty-32:/vagrant/ARtest$

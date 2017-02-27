@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  description: MyString
+  lecture_title: MyString
+  instructor: MyString
+  url: MyString
+  remark: MyText
+
+two:
+  title: MyString
+  description: MyString
+  lecture_title: MyString
+  instructor: MyString
+  url: MyString
+  remark: MyText

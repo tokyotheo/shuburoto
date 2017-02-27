@@ -1,0 +1,14 @@
+<% if @current_user -%>
+  <%= @current_user.name %> さんのアカウント |
+  <%= link_to 'マイページ',
+        { :controller => '/users'} -%> |
+  <%= link_to 'ログアウト',
+        { :controller => '/login', :action => 'logout' },
+        { :method => 'post',
+          :confirm => '本当にログアウトしますか？' } -%>
+  <% if @current_user.admin -%> |
+  <%=     link_to '管理ページ',
+          { :controller => '/admin/users'}
+  -%>
+  <% end -%>
+<% end -%>

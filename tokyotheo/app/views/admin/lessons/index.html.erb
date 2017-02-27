@@ -1,0 +1,35 @@
+<%= render :partial => 'shared/account' %>
+<h2><%= link_to 'Users', admin_users_path %></h2>
+<h2><%= link_to 'Lectures', admin_lectures_path %></h2>
+<h1>Lessons(<%=h @lessons.size %>)</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Lecture ID</th>
+    <th>Lecture title</th>
+    <th>Instructor</th>
+    <th>Url</th>
+    <th>Remark</th>
+  </tr>
+
+<% for lesson in @lessons %>
+  <tr>
+    <td><%=h lesson.title %></td>
+    <td><%=h lesson.description %></td>
+    <td><%=h lesson.lecture %></td>
+    <td><%=h lesson.lecture_title %></td>
+    <td><%=h lesson.instructor %></td>
+    <td><%=h lesson.url %></td>
+    <td><%=h lesson.remark %></td>
+    <td><%= link_to 'Show', admin_lesson_path(lesson) %></td>
+    <td><%= link_to 'Edit', edit_admin_lesson_path(lesson) %></td>
+    <td><%= link_to 'Destroy', admin_lesson_path(lesson), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New lesson', new_admin_lesson_path %>

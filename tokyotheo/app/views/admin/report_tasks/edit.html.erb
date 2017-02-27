@@ -1,0 +1,32 @@
+<h1>Editing report_task</h1>
+
+<% form_for(@report_task) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :lecture_id %><br />
+    <%= f.text_field :lecture_id %>
+  </p>
+  <p>
+    <%= f.label :instructor_id %><br />
+    <%= f.text_field :instructor_id %>
+  </p>
+  <p>
+    <%= f.label :task %><br />
+    <%= f.text_area :task %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', admin_report_task_path(@report_task) %> |
+<%= link_to 'Back', admin_report_tasks_path %>

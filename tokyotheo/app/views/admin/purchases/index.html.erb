@@ -1,0 +1,22 @@
+<h1>Listing purchases</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Lecture no</th>
+    <th>Start</th>
+    <th>End</th>
+  </tr>
+
+<% for purchase in @purchases %>
+  <tr>
+    <td><%=h purchase.user_id %></td>
+    <td><%=h purchase.lecture_no %></td>
+    <td><%=h purchase.start %></td>
+    <td><%=h purchase.end %></td>
+    <td><%= link_to 'Show', admin_purchase_path(purchase) %></td>
+    <td><%= link_to 'Edit', edit_admin_purchase_path(purchase) %></td>
+    <td><%= link_to 'Destroy', admin_purchase_path(purchase), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

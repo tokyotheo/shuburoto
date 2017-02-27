@@ -1,0 +1,62 @@
+/*--------------スタイルの初期化---------------*/
+body {
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+hr.none {
+	display: none;
+}
+/*--------------全般スタイル---------------*/
+body {
+	background-image: url(../img/bg-img.jpg);
+	background-repeat: repeat-x;
+	color: #333333;
+}
+A {
+	color: #FF6600;
+	text-decoration: underline;
+}
+A:hover {
+	text-decoration: underline;
+}
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+

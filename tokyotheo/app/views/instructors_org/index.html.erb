@@ -1,0 +1,30 @@
+<h1>Listing instructors</h1>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>First name kana</th>
+    <th>Last name kana</th>
+    <th>Lecture</th>
+    <th>Report task</th>
+  </tr>
+
+<% for instructor in @instructors %>
+  <tr>
+    <td><%=h instructor.first_name %></td>
+    <td><%=h instructor.last_name %></td>
+    <td><%=h instructor.first_name_kana %></td>
+    <td><%=h instructor.last_name_kana %></td>
+    <td><%=h instructor.lecture_id %></td>
+    <td><%=h instructor.report_task_id %></td>
+    <td><%= link_to 'Show', instructor %></td>
+    <td><%= link_to 'Edit', edit_instructor_path(instructor) %></td>
+    <td><%= link_to 'Destroy', instructor, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New instructor', new_instructor_path %>

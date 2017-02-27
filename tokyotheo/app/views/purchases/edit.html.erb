@@ -1,0 +1,28 @@
+<h1>Editing purchase</h1>
+
+<% form_for(@purchase) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :lecture_no %><br />
+    <%= f.text_field :lecture_no %>
+  </p>
+  <p>
+    <%= f.label :start %><br />
+    <%= f.date_select :start %>
+  </p>
+  <p>
+    <%= f.label :end %><br />
+    <%= f.date_select :end, :include_blank => true %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @purchase %> |
+<%= link_to 'Back', purchases_path %>

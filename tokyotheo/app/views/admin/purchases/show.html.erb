@@ -1,0 +1,26 @@
+<p>
+  <b>User:</b>
+  <%=h @user.name %>
+  (<%=h @user.user_id %>)
+</p>
+
+<p>
+  <b>Lecture:</b>
+  <%=h @lecture.title %>
+  (No:<%=h @lecture.no %>
+  , 単位:<%=h @lecture.credit %>)
+</p>
+
+<p>
+  <b>Start:</b>
+  <%=h @purchase.start %>
+</p>
+
+<p>
+  <b>End:</b>
+  <%=h @purchase.end %>
+</p>
+
+
+<%= link_to '編集する', edit_admin_purchase_path(@purchase) %> |
+<%= link_to '戻る（ユーザー管理ページへ）', admin_user_path(@user) %>

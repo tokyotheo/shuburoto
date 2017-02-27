@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: MyString
+  lecture_no: 1
+  start: 2010-07-18
+  end: 2010-07-18
+
+two:
+  user_id: MyString
+  lecture_no: 1
+  start: 2010-07-18
+  end: 2010-07-18

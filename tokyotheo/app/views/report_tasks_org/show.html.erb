@@ -1,0 +1,28 @@
+<p>
+  <b>Title:</b>
+  <%=h @report_task.title %>
+</p>
+
+<p>
+  <b>Lecture:</b>
+  <%=h @report_task.lecture_id %>
+</p>
+
+<p>
+  <b>Instructor:</b>
+  <%=h @report_task.instructor_id %>
+</p>
+
+<p>
+  <b>Task:</b>
+  <%=h @report_task.task %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @report_task.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_report_task_path(@report_task) %> |
+<%= link_to 'Back', report_tasks_path %>

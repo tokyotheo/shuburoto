@@ -1,0 +1,30 @@
+<h1>Editing purchase</h1>
+
+<% form_for @purchase, :url => {:controller => 'admin/purchases', :action => 'update'} do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :user_id %>:
+    <%=h @user.name %>
+    (<%=h @user.user_id %>)
+  </p>
+  <p>
+    Lecture::
+    <%=h @lecture.title %>
+    (No:<%=h @lecture.no %>
+    , 単位:<%=h @lecture.credit %>)
+  </p>
+  <p>
+    開始日:<br />
+    <%= f.date_select :start %>
+  </p>
+  <p>
+    完了日:<br />
+    <%= f.date_select :end, :include_blank => true %>
+  </p>
+  <p>
+    <%= f.submit "更新" %>
+  </p>
+<% end %>
+
+<%= link_to '戻る（ユーザー管理ページへ）', admin_user_path(@user) %>

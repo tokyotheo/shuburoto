@@ -1,0 +1,53 @@
+<%= render :partial => 'shared/menu_bar' %>
+<%= render :partial => 'shared/side_bar' %>
+<%= render :partial => 'shared/account' %>
+
+<h1>Listing lectures</h1>
+
+<table>
+  <tr>
+    <th>NO</th>
+    <th>Title</th>
+    <th>Instructor</th>
+    <th>Category1</th>
+    <th>Category2</th>
+    <th>Description</th>
+    <th>Credit</th>
+<!--
+    <th>Price</th>
+    <th>Purpose</th>
+    <th>Plan</th>
+    <th>Evaluation</th>
+    <th>Textbook</th>
+    <th>Url</th>
+    <th>Remark</th>
+-->
+  </tr>
+
+<% for lecture in @lectures %>
+  <tr>
+    <td><%=h lecture.no %></td>
+    <td><%=h lecture.title %></td>
+    <td><%=h lecture.instructor %></td>
+    <td><%=h lecture.category1 %></td>
+    <td><%=h lecture.category2 %></td>
+    <td><%=h lecture.description %></td>
+    <td><%=h lecture.credit %></td>
+<!--
+    <td><%=h lecture.price %></td>
+    <td><%=h lecture.purpose %></td>
+    <td><%=h lecture.plan %></td>
+    <td><%=h lecture.evaluation %></td>
+    <td><%=h lecture.textbook %></td>
+    <td><%=h lecture.remark %></td>
+-->
+    <td><%= link_to 'Show', lecture %></td>
+    <td><%= link_to 'Edit', edit_lecture_path(lecture) %></td>
+    <td><%= link_to 'Destroy', lecture, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New lecture', new_lecture_path %>

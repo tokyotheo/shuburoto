@@ -1,0 +1,35 @@
+<h1>New instructor</h1>
+
+<% form_for(@instructor) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </p>
+  <p>
+    <%= f.label :first_name_kana %><br />
+    <%= f.text_field :first_name_kana %>
+  </p>
+  <p>
+    <%= f.label :last_name_kana %><br />
+    <%= f.text_field :last_name_kana %>
+  </p>
+  <p>
+    <%= f.label :lecture_id %><br />
+    <%= f.text_field :lecture_id %>
+  </p>
+  <p>
+    <%= f.label :report_task_id %><br />
+    <%= f.text_field :report_task_id %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', instructors_path %>

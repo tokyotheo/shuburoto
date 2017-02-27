@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  lecture_id: 1
+  instructor_id: 1
+  task: MyText
+  date: 2009-03-08
+
+two:
+  title: MyString
+  lecture_id: 1
+  instructor_id: 1
+  task: MyText
+  date: 2009-03-08
